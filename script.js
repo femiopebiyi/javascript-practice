@@ -1,12 +1,7 @@
-var age=18;
-var guess=prompt("what is my age?")
-var myAge=Number(guess);
-if (myAge===18){
-    alert("wow you got that right!!!!")
+var capital= prompt("what is the capital of nigeria?");
+while (capital.indexOf("Abuja")===-1){
+    alert("jesus christ read a book or something")
+    var capital= prompt("what is the capital of nigeria?");
 }
-else if (myAge<18){
-    alert("go higher dickhead")
-}
-else{
-    alert("go lower you little piece of shit")
-}
+
+alert("you know your geography dont you")
