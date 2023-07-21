@@ -1,7 +1,4 @@
-var capital= prompt("what is the capital of nigeria?");
-while (capital.indexOf("Abuja")===-1){
-    alert("jesus christ read a book or something")
-    var capital= prompt("what is the capital of nigeria???");
+for (let count = 0; count < 6; count++) {
+    console.log(count)
+    
 }
-
-alert("you know your geography dont you")
