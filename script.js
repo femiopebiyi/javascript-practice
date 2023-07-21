@@ -1,4 +1,6 @@
-for (let count = 0; count < 6; count++) {
-    console.log(count)
+
+var string= "hello"
+for (let i = 0; i < string.length; i++) {
+    console.log(string[i])
     
 }
