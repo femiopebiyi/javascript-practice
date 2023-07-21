@@ -8,5 +8,5 @@ else if (myAge<18){
     alert("go higher dickhead")
 }
 else{
-    alert("go lower hermano")
+    alert("go lower you little piece of shit")
 }
