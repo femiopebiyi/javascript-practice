@@ -1,14 +1,24 @@
-
-for (let i = -10;  i<= 19; i++) {
-    console.log(i)
-    
+function dosomething() {
+    console.log("hello world");
 }
-for(var i=20; i<=40; i+=2){
-    console.log(i)
-
+function twinkleStar(){
+    console.log("twinkle twinkle little star")
+    console.log("how i wonder what you are")
 }
-
-for (let  i = 301; i<= 333;   i+=2) {
-    console.log(i)
-    
+function sayHello(name){
+    console.log("hello there " + name + "!")
+}
+function square(num){
+    console.log(num*num);
+}
+function greet(idolo, gbrancis, gboj){
+    console.log("hi " + idolo)
+    console.log("hi " + gbrancis)
+    console.log("hi " + gboj)
+}
+function agecalc(age){
+    console.log(age*365 + " days")
+}
+function cube(num){
+    return (num*num*num)
 }
