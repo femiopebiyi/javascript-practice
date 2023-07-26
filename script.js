@@ -1,24 +1,24 @@
-function dosomething() {
-    console.log("hello world");
+var todo=[];
+var input = prompt("what would you like to do?");
+
+while(input!=="quit"){
+    if (input==="new"){
+        var newTodo=prompt("add to todo");
+        todo.push(newTodo);
+        console.log("you added a todo");
+    }
+    else if(input==="list"){
+        console.log("**********")
+        todo.forEach(function(todos, i){
+            console.log(i + ": " + todos)
+        })
+        console.log("**********")
+    }
+    else if(input==="delete"){
+        var index =prompt("what index would you like to delete?");
+        todo.splice(index, 1)
+        console.log("you deleted a todo")
+    }
+    var input = prompt("what would you like to do?");
 }
-function twinkleStar(){
-    console.log("twinkle twinkle little star")
-    console.log("how i wonder what you are")
-}
-function sayHello(name){
-    console.log("hello there " + name + "!")
-}
-function square(num){
-    console.log(num*num);
-}
-function greet(idolo, gbrancis, gboj){
-    console.log("hi " + idolo)
-    console.log("hi " + gbrancis)
-    console.log("hi " + gboj)
-}
-function agecalc(age){
-    console.log(age*365 + " days")
-}
-function cube(num){
-    return (num*num*num)
-}
+console.log('you quit the app!!!')
