@@ -1,24 +1,28 @@
-var todo=[];
-var input = prompt("what would you like to do?");
-
-while(input!=="quit"){
-    if (input==="new"){
-        var newTodo=prompt("add to todo");
-        todo.push(newTodo);
-        console.log("you added a todo");
+var movies= [
+    {
+        title: 'Oppenheimer',
+        star: 5,
+        hasSeen:true
+    },
+    {
+        title:"Barbie",
+        star: 5,
+        hasSeen: false
+    },
+    {
+        title: "John Wick",
+        star : 2,
+        hasSeen: false
     }
-    else if(input==="list"){
-        console.log("**********")
-        todo.forEach(function(todos, i){
-            console.log(i + ": " + todos)
-        })
-        console.log("**********")
+]
+movies.forEach(function(movie){
+    var result= "You Have ";
+    if(movie.hasSeen){
+        result+= "seen "
     }
-    else if(input==="delete"){
-        var index =prompt("what index would you like to delete?");
-        todo.splice(index, 1)
-        console.log("you deleted a todo")
+    else{
+        result+="not seen "
     }
-    var input = prompt("what would you like to do?");
-}
-console.log('you quit the app!!!')
+    result+=  movie.title + " " + movie.star +"-stars"
+    console.log(result)
+})
