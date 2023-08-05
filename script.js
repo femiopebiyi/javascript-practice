@@ -1,6 +1,15 @@
-var p = document.querySelector("p")
 
-p.classList.add("big")
-p.classList.remove("big")
-p.classList.toggle("big")
+let button = document.querySelector('button');
+let body = document.querySelector('body');
+isPurple= false
 
+button.addEventListener('click', function(){
+    if (isPurple){
+        body.style.background= "white"
+        isPurple= false
+    }
+    else{
+        body.style.background= "purple"
+        isPurple= true
+    }
+})
